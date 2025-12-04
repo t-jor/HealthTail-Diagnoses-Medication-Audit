@@ -12,6 +12,12 @@ The project follows a three-layer architecture:
 RAW → INTEGRATION → CONSUMER → Looker Studio Dashboard
 ```
 
+### 1.0 BigQuery Project Structure
+
+The following screenshot shows the corresponding data set and table structure in BigQuery.
+
+![BigQuery Structure](../img/bigquery_structure.png)
+
 ### 1.1 RAW Layer (source data)
 
 | Raw Table                | Description                                  |
@@ -37,7 +43,7 @@ Created by:
 
 | Consumer Table            | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
-| `med_audit`               | consolidated inflow/outflow of medications (assignment Q1–Q4)               |
+| `med_audit`               | consolidated inflow/outflow of medications (answers MAQs)               |
 | `healthtail_facts`        | main fact table (visits × registration_clean)                               |
 | `healthtail_diag_share`   | monthly diagnosis counts + % of total                                       |
 | `med_inventory_all`       | extended inventory model (flows + running totals)                            |
@@ -78,10 +84,9 @@ graph TD
     ds[healthtail_diag_share]
     md[med_diagnosis_map]
     mi[med_inventory_all]
-    ma[med_audit (SQL Q1–Q4 only)]
+    ma["med_audit – MAQ table"]
   end
 
-  %% --- Flows ---
   reg --> rc
 
   rc --> hf
@@ -118,7 +123,7 @@ graph TD
 ```text
 1. Step 1  → registration_clean
 2. Step 2a → med_audit
-3. Step 2b → (assignment questions only)
+3. Step 2b → (answers Medication Audit Questions - MAQs)
 4. Step 3  → healthtail_facts
 5. Step 3a → healthtail_diag_share
 6. Step 3b → med_inventory_all

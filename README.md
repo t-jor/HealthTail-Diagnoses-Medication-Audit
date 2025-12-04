@@ -100,7 +100,7 @@ Topics include:
 - Trends in diagnosis shares  
 - Medication inventory patterns  
 
----
+### ···
 
 📄 Full questions → **[docs/ASSIGNMENT_BRIEF.md](docs/ASSIGNMENT_BRIEF.md)**  
 📘 Full answers → **[docs/FINDINGS_AND_QA.md](docs/FINDINGS_AND_QA.md)**
@@ -146,4 +146,4 @@ README.md               ← Executive summary (this file)
 ## 👤 Author
 
 **Thomas Jortzig**  
-HealthTail-Project – September 2025
+HealthTail-Project (09/2025)
