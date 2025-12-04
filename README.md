@@ -68,7 +68,6 @@ This BI solution modernizes their analytics capabilities.
 ### 1. Medication Audit – SQL (Step 2)
 
 Using the aggregated table `med_audit`, the project answers four audit-focused questions (via [`Step2b_questions_med_audit.sql`](sql/Step2b_questions_med_audit.sql)):
-:
 
 1. Which medication has the **highest total spend** (purchases)?  
 2. Which medication × month combination has the **highest spending on patients**?  

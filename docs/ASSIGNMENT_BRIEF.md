@@ -34,17 +34,17 @@ The client supplied three datasets:
 ### **1) healthtail_reg_cards**
 
 - Patient and owner information  
-- Fields: owner_id, patient_id, breed, pet_type, age, name, phone, registration_date  
+- Fields: patient_id, owner_id, owner_name, pet_type, breed, patient_name, gender, patient_age, date_registration, owner_phone  
 
 ### **2) visits**
 
 - Clinical visits and treatments  
-- Fields: visit_id, patient_id, diagnosis, doctor, datetime, medication prescribed, dosage, medication cost  
+- Fields: visit_id, patient_id, visit_datetime, doctor, diagnosis, med_prescribed, med_dosage, med_cost  
 
 ### **3) invoices**
 
 - Medication purchase logs  
-- Fields: med_name, packs, pack_price, total_price, month_invoice  
+- Fields: month_invoice, invoice_id, supplier, med_name, packs, price, total_price  
 
 All files contain **synthetic/fake data** and may include inconsistencies or missing values.
 

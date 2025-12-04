@@ -9,7 +9,7 @@ It answers the eight stakeholder questions and outlines key insights.
 
 ### Q1 — What are the most common diagnoses overall?
 
-- The top three diagnoses account for **16.8%** of all treatments.  
+- The top three diagnoses account for **17%** of all treatments.  
 - **HCM** is the most frequent diagnosis overall, followed by Hip Dysplasia and Arthritis.  
 - Overall case distribution is broad with no extreme concentration.
 
